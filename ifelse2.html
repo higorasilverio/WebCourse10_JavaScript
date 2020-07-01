@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+
+		<title>JavaScript If Else Class - Part 2</title>
+
+		<script type="text/javascript">
+			
+			if (2 == 2 && 4 == 3 && 'a' != 'b'){
+				document.write('true for &&');
+			}
+			else{
+				document.write('false for &&');
+			}
+			document.write('</br>')
+			if (2 == 2 || 4 == 3 || 'a' != 'b'){
+				document.write('true for ||');
+			}
+			else{
+				document.write('false for ||');
+			}
+			document.write('</br></br></br>')
+
+			var grade = prompt('Enter the student grade:');
+			var absents = prompt('Enter the student absents:');
+
+			var medium = 7;
+			var absents_limit = 15;
+
+			if(grade >=  medium && absents <= absents_limit){
+				alert('Student approved!');
+			}
+			else{
+				var absents_missing = absents - absents_limit;
+				var grade_missing = medium - grade;
+				if(grade >= medium && absents > absents_limit){
+					alert('Student repproved! It is missing ' + absents_missing + ' classes for approvation!');
+				}
+				else if(grade < medium && absents <= absents_limit){
+					alert('Student repproved! It is missing ' + grade_missing + ' points for approvation!');
+				}
+				else {
+					alert('Student repproved! It is missing ' + grade_missing + ' points and ' + absents_missing + ' classes for approvation!');
+				}
+			}
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>
