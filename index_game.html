@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Popping Baloons</title>
+
+		<script language='Javascript'>
+			function beginGame(){
+				var gameLevel = document.getElementById('gameLevel').value;
+				window.location.href = 'core_game.html?'+gameLevel;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<p>
+				<b>Level: </b>
+				<select id="gameLevel">
+					<option value="1">Easy</option>
+					<option value="2">Medium</option>
+					<option value="3">Hard</option>
+				</select>
+			</p>
+			<br>
+			<img src="img/iniciar.png" onclick="beginGame()">
+		</div>
+	</body>
+	
+</html>

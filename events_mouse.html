@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+
+		<title>JavaScript Events</title>
+
+		<script type="text/javascript">
+			
+			//onclick
+			function msgClick (){
+				alert('You give it a click');
+			}
+			//ondbclick
+			function msgDoubleClick(){
+				alert('You give it a double click');
+			}
+			//onmousedown
+			function msgMouseDown(){
+				alert('You clicked and released, or not');
+			}
+			//onmouseover
+			function msgMouseOver(){
+				alert('Mouse went over');
+			}
+			//onmouseout
+			function msgMouseOut(){
+				alert('Mouse left');
+			}
+
+		</script>
+
+	</head>
+	<body style="padding: 0px 0px 0px 200px;">
+		<div onclick="msgClick()" style="background: #F00; height: 100px; width: 100px;"><h3>CLICK</h3></div>
+		<div style="margin: 10px;"></div>
+		<div ondblclick="msgDoubleClick()" style="background: #0F0; height: 100px; width: 100px;"><h3>DOUBLE CLICK</h3></div>
+		<div style="margin: 10px;"></div>
+		<div onmousedown="msgMouseDown()" style="background: #00F; height: 100px; width: 100px;"><h3>MOUSE DOWN</h3></div>
+		<div style="margin: 10px;"></div>
+		<div onmouseover="msgMouseOver()" style="background: #F0F; height: 100px; width: 100px;"><h3>WHENT OVER</h3></div>
+		<div style="margin: 10px;"></div>
+		<div onmouseout="msgMouseOut()" style="background: #FF0; height: 100px; width: 100px;"><h3>MOUSE OUT</h3></div>
+	</body>
+</html>

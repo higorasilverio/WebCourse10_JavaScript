@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Popping Baloons</title>
+
+		<script type="text/javascript" src="game.js">
+			
+		</script>
+
+	</head>
+
+	<body onload="beginGame()">
+		<div style="float: left; width: auto; height: 500px; background: #fff; border: solid 1px blue; margin-right: 5px;">
+			<table border="0">
+				<tr>
+					<td>
+						<img src="img/balao_azul_grande.png">
+					</td>
+					<td>
+						<span id="ballons_intact" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table border="0">
+				<tr>
+					<td>
+						<img src="img/balao_azul_grande_estourado.png">
+					</td>
+					<td>
+						<span id="ballons_popped" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>	
+			<br>
+			<table border="0" style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('img/cronometro.png'); text-align: center;">
+						<span id="cronometer" style="color: red; font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="cenarium" style="float: left; width: 600px; height: 500px; background: url('img/cenario.png'); background-position: bottom;"></div>
+	</body>
+	
+</html>
